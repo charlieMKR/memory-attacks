@@ -20,9 +20,9 @@ void corruptableFunc(char *charArray) {
 }
 
 int main(){
-	char *corruptorArray = "AAAAAAAAAAAAAAAAAAroc"; // will overwrite %ebp with 0x00636f72 (cor)
-	// printf("Enter a string: "); // uncomment these for interactive mode
-	// gets(corruptorArray);
+	char corruptorArray[30] = "AAAAAAAAAAAAAAAAAAroc"; // will overwrite %ebp with 0x00636f72 (cor)
+	//printf("Enter a string: "); // uncomment these for interactive mode
+	//gets(corruptorArray);
 	corruptableFunc(corruptorArray);
 	printf("Exiting!");
 	return 0;
