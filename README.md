@@ -18,3 +18,4 @@ The goal of this repo is to educate myself on memory attacks.
 ### Other notes
 - If you are on linux, 64 bits, install `gcc-multilib`
 - GDB cheatsheet: [http://www.yolinux.com/TUTORIALS/GDB-Commands.html](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
+- Inject shellcode: $(python -c 'print("\x66\x6f\x6f")')
