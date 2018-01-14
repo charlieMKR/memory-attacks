@@ -29,7 +29,6 @@ char *answer(char *charArray) {
 		return "Sorry, wrong password!";
 	}
 
-	printf("Stored value: %s\n", overflowable);
 }
 
 int main(){
