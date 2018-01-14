@@ -20,3 +20,5 @@ The goal of this repo is to educate myself on memory attacks.
 - GDB cheatsheet: [http://www.yolinux.com/TUTORIALS/GDB-Commands.html](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
 - Inject shellcode: `echo $(python -c 'print("\x66\x6f\x6f")') | ./nameofbinary.o`
 - Attach gdb to process: `sudo gdb -p $(pgrep nameofbinary)`
+- Disable ASLR: `echo 0 | sudo tee /proc/sys/kernel/randomize_va_space`
+- Enable ASLR: `echo 2 | sudo tee /proc/sys/kernel/randomize_va_space`
