@@ -36,7 +36,7 @@ int main(){
 	sleep(5); // Give time for gdb to attach: sudo gdb -p $(pgrep localvarover)
 	printf("Enter the password to unlock the answer to life, the universe and everything: ");
 	/* Steps:
-	 * 1. Use "AAAAAAAAAA" input and examine the stack with GDB
+	 * 1. Use "AAAAAAAAA" input and examine the stack with GDB
 	 * 2. Get the stack address of overflowable local
 	 * 3. Run again and use echo $(python -c 'print("\x41"*10 + "\x92\xd0\xff\xff")') | ./localvaroverwrite.o
 	 * where the last 4 bytes of your input are the address of overflowable local in the stack.
