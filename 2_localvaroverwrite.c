@@ -20,7 +20,7 @@
 
 
 char *answer(char *charArray) {
-	char *HARDCODEDPASS = "Whatever"; // Address will be stored in the stack
+	char *HARDCODEDPASS = "Whatever\n"; // Address will be stored in the stack
 	char overflowable[10]; // buffer that will be overflowed
 	strcpy(overflowable, charArray); // HARDCODEDPASS address overwrite
 	if(strcmp(overflowable,HARDCODEDPASS) == 0){
